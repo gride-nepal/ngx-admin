@@ -55,6 +55,11 @@ export const MENU_ITEMS: NbMenuItem[] = [
         link: '/pages/forms/datepicker',
       },
       {
+        title: 'Address Settings',
+        icon: 'edit-2-outline',
+        link: '/settings/basic-settings',
+      },
+      {
         title: 'Terms & Privacy Setting',
         link: '/settings/terms-privacy/user-terms',
       },
