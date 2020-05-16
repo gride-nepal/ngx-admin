@@ -3,7 +3,7 @@ import { NbMenuItem } from '@nebular/theme';
 export const MENU_ITEMS: NbMenuItem[] = [
   {
     title: 'Dashboard',
-    icon: 'shopping-cart-outline',
+    icon: 'pie-chart-outline',
     link: '/pages/dashboard',
     home: true,
   },
@@ -22,11 +22,13 @@ export const MENU_ITEMS: NbMenuItem[] = [
     children: [
       {
         title: 'Basic Settings',
+        icon: 'edit-2-outline',
         link: '/settings/basic-settings',
       },
       {
         title: 'Installation Settings',
-        link: '/pages/forms/layouts',
+        icon: 'shopping-cart-outline',
+        link: '/settings/installation-settings',
       },
       {
         title: 'Admin Settings',
@@ -54,7 +56,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
       {
         title: 'Terms & Privacy Setting',
-        link: '/pages/forms/datepicker',
+        link: '/settings/terms-privacy/user-terms',
       },
     ],
   },

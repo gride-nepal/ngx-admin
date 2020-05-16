@@ -1,0 +1,13 @@
+nb-tabset {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+:host ::ng-deep ngx-tab1, 
+:host ::ng-deep ngx-tab2,
+:host ::ng-deep ngx-tab3, 
+:host ::ng-deep ngx-tab4 {
+  display: block;
+ // padding: 1rem 2rem;
+}

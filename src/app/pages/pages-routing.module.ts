@@ -79,6 +79,21 @@ const routes: Routes = [{
         .then(m => m.BasicSettingsModule),
     },
     {
+      path: 'installation-settings',
+      loadChildren: () => import('./installation-settings/installation-settings.module')
+        .then(m => m.InstallationSettingsModule),
+    },
+    {
+      path: 'terms-privacy',
+      loadChildren: () => import('./terms-privacy/layout-routing.module')
+        .then(m => m.LayoutRoutingModule),
+    },
+    {
+      path: 'user-terms',
+      loadChildren: () => import('./terms-privacy/layout-routing.module')
+        .then(m => m.LayoutRoutingModule),
+    },
+    {
       path: '',
       redirectTo: 'dashboard',
       pathMatch: 'full',
