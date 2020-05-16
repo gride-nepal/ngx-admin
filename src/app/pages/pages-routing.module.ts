@@ -69,6 +69,16 @@ const routes: Routes = [{
         .then(m => m.MiscellaneousModule),
     },
     {
+      path: 'languages-settings',
+      loadChildren: () => import('./languages-settings/languages-settings.module')
+        .then(m => m.LanguageSettingsModule),
+    },
+    {
+      path: 'basic-settings',
+      loadChildren: () => import('./basic-settings/basic-settings.module')
+        .then(m => m.BasicSettingsModule),
+    },
+    {
       path: '',
       redirectTo: 'dashboard',
       pathMatch: 'full',

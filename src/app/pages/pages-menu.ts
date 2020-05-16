@@ -2,7 +2,7 @@ import { NbMenuItem } from '@nebular/theme';
 
 export const MENU_ITEMS: NbMenuItem[] = [
   {
-    title: 'E-commerce',
+    title: 'Dashboard',
     icon: 'shopping-cart-outline',
     link: '/pages/dashboard',
     home: true,
@@ -15,6 +15,48 @@ export const MENU_ITEMS: NbMenuItem[] = [
   {
     title: 'FEATURES',
     group: true,
+  },
+  {
+    title: 'Settings',
+    icon: 'edit-2-outline',
+    children: [
+      {
+        title: 'Basic Settings',
+        link: '/settings/basic-settings',
+      },
+      {
+        title: 'Installation Settings',
+        link: '/pages/forms/layouts',
+      },
+      {
+        title: 'Admin Settings',
+        link: '/pages/forms/buttons',
+      },
+      {
+        title: 'Languages',
+        link: '/settings/languages-settings',
+      },
+      {
+        title: 'Documents',
+        link: '/pages/forms/datepicker',
+      },
+      {
+        title: 'Promo Codes',
+        link: '/pages/forms/datepicker',
+      },
+      {
+        title: 'Mail Templates',
+        link: '/pages/forms/datepicker',
+      },
+      {
+        title: 'SMS Templates',
+        link: '/pages/forms/datepicker',
+      },
+      {
+        title: 'Terms & Privacy Setting',
+        link: '/pages/forms/datepicker',
+      },
+    ],
   },
   {
     title: 'Layout',

@@ -31,6 +31,7 @@ import { CountryOrderData } from './data/country-order';
 import { StatsProgressBarData } from './data/stats-progress-bar';
 import { VisitorsAnalyticsData } from './data/visitors-analytics';
 import { SecurityCamerasData } from './data/security-cameras';
+import { LanguagesSettingsData } from './data/languages-settings';
 
 import { UserService } from './mock/users.service';
 import { ElectricityService } from './mock/electricity.service';
@@ -53,6 +54,8 @@ import { VisitorsAnalyticsService } from './mock/visitors-analytics.service';
 import { SecurityCamerasService } from './mock/security-cameras.service';
 import { MockDataModule } from './mock/mock-data.module';
 
+import { LanguagesSettingsService } from './mock/languages-settings.service';
+
 const socialLinks = [
   {
     url: 'https://github.com/akveo/nebular',
@@ -74,7 +77,8 @@ const socialLinks = [
 const DATA_SERVICES = [
   { provide: UserData, useClass: UserService },
   { provide: ElectricityData, useClass: ElectricityService },
-  { provide: SmartTableData, useClass: SmartTableService },
+  { provide: SmartTableData, useClass: SmartTableService }, 
+  { provide: LanguagesSettingsData, useClass: LanguagesSettingsService },
   { provide: UserActivityData, useClass: UserActivityService },
   { provide: OrdersChartData, useClass: OrdersChartService },
   { provide: ProfitChartData, useClass: ProfitChartService },
